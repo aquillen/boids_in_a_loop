@@ -9,4 +9,5 @@ The boids can push on the boundary, and the boundary causes the boids to circula
 Instability seems to involve matching the boid speed to waves of perturbations on the boundary.
 
 
+
 live: https://aquillen.github.io/boids_in_a_loop/
