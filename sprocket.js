@@ -22,7 +22,7 @@ const dt = 5e-3*big_radius/boidspeed; // timestep
 
 // numbers of nodes/boids and mass ratio
 const nnodes  = 150; // numbers of mass nodes in rink
-const M_boundary  = 25.0; // total boundary mass
+const M_boundary  = 10.0; // total boundary mass
 const node_mass = M_boundary/nnodes; // mass of nodes
 const nboids = 400;  // number of boids
 const M_boids = 1.0; // total boid mass
@@ -42,7 +42,7 @@ var d_align = 0.2; // scale for alignment
 var align_force_alpha = 3.0; // units of 1/time!
 
 var d_repel = 0.1; // scale for repel force
-var U_repel = 0.1*boid_mass;  // Urepel: units is energy
+var U_repel = 0.05*boid_mass;  // Urepel: units is energy
 
 // boid/boundary interaction /////////////////
 const force_amp = 1.5; // for interactions between boids and nodes
@@ -73,7 +73,7 @@ var onscreen = 0; /// show some numbers on canvas
 var usesliders = 0; // use sliders or not
 
 var nbcounter = 0; // number of boundary files printed out
-const pbinfo = 1;  // print boundary info or not
+const pbinfo = 0;  // print boundary info or not
 
 ////////////////////////////////////////
 // sliders 
